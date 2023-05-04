@@ -1,0 +1,855 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FCFAF9;
+    overflow-x: hidden;
+}
+
+/* ====== MOBILE SCREEN STARTS ======= */
+@media (max-width:624px) {
+    body .header .backgrond-bubble{
+        background-image: url(assets/bg-main-mobile.png);
+        position: absolute;
+        width: 90%;
+        height: 80%;
+        left: 10%;
+        top: -25%;
+    }
+
+    body .header .logo{
+        background-image: url(/assets/logo.svg);
+        position: absolute;
+        color: #191826;
+        width: 146.09px;
+        height: 32px;
+        left: 7%;
+        top: 5%;
+    }
+    body .header .patren{
+        display: none;
+    }
+    body .header .headline .main-text{
+        position: absolute;
+        color: #191826;
+        width: 325px;
+        height: 135px;
+        left: 7%;
+        top: 17%;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1px;
+    }
+    body .header .headline .sec-text{
+        position: absolute;
+        color: #191826;
+        width: 345px;
+        height: 135px;
+        left: 7%;
+        top: 35%;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    body .container{
+        overflow-x: hidden;
+    }
+    body .container .mobile-screen{
+        background-image: url(/assets/illustration-app.png);
+        background-size: 220px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 56.6%;
+        height: 100%;
+        left: 22%;
+        top: 60%;
+        overflow-x: hidden;
+    }
+    body .container .sec-patren{
+        background-image: url(/assets/bg-pattern-2.svg);
+        background-size: 300px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 73%;
+        height: 100%;
+        left: 12.8%;
+        top: 71%;
+        z-index: -1;
+    }
+    body .container .background-sec-patren{
+        background-color: #191826;
+        position: absolute;
+        top: 71%;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        border-radius: 12px;
+    }
+    body .container .container-description{
+        background-color: #FA7453;
+        position: absolute;
+        top: 117.5%;
+        width: 100%;
+        height: 70%;
+        border-radius: 12px;
+    }
+    body .container .container-description-headline{
+        color: #FCFAF9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 48px;
+        letter-spacing: -1px;
+        position: absolute;
+        top: 121%;
+        left: 7%;
+        width: 40%;
+        height: 10%;
+        border-radius: 12px;
+    }
+    body .container .container-description-text{
+        color: #fcfaf9d4;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        position: absolute;
+        top: 128%;
+        left: 7%;
+        width: 345px;
+        height: 135px;
+        border-radius: 12px;
+    }
+    body .container .container-description-price{
+        color: #fcfaf9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 30px;
+        position: absolute;
+        top: 152%;
+        left: 7%;
+    }
+    body .container .container-description-price-text{
+        color: #fcfaf9d4;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        word-spacing: -5px;
+        position: absolute;
+        top: 152%;
+        left: 36%;
+    }
+    body .container .ios-download{
+        width: 85.6%;
+        height: 8.5%;
+        background-color: #191826;
+        position: absolute;
+        top: 163%;
+        left: 7.2%;
+        border-radius: 15px;
+    }
+    body .container .ios-download:hover{
+        background-color: #66E2DC;
+    }
+    body .container .ios-download .ios-icon{
+        background-image: url(/assets/icon-apple.svg);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        color: #FCFAF9;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 31%;
+        left: 24%;
+    }
+    body .container .ios-download .ios-text{
+        color: #FCFAF9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 31.5%;
+        left: 33%;
+    }
+    body .container .android-download{
+        width: 85.6%;
+        height: 8.5%;
+        background-color: #FCFAF9;
+        position: absolute;
+        top: 174%;
+        left: 7.2%;
+        border-radius: 15px;
+    }
+    body .container .android-download:hover{
+        background-color: #FFB964;
+    }
+    body .container .android-download .android-icon{
+        background-image: url(/assets/icon-android.svg);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        color: #191826;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 34%;
+        left: 16.5%;
+    }
+    body .container .android-download .android-text{
+        color: #191826;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: 31.5%;
+        left: 25%;
+    }
+    .footer .footer-logo{
+        background-image: url(/assets/logo.svg);
+        position: absolute;
+        color: #191826;
+        width: 146.09px;
+        height: 32px;
+        left: 7%;
+        top: 195%;
+    }
+    .footer .footer-discrption{
+        width: 350px;
+        height: 132px;
+        position: absolute;
+        left: 7%;
+        top: 202%;
+        color: #191826;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 19px;
+    }
+    .footer .footer-discrption span{
+        font-weight: 700;
+    }
+    .footer .footer-social-media {
+        width: 350px;
+        height: 100px;
+        position: absolute;
+        left: 7%;
+        top: 222%;
+    }
+    .footer .footer-social-media .facebook{
+        background-image: url(/assets/icon-facebook.svg);
+        background-repeat: no-repeat;
+        color: #191826;
+        width: 20%;
+        height: 20%;
+        position: absolute;
+    }
+    .footer .footer-social-media .facebook:hover{
+        color: #FA7453;
+    }
+    .footer .footer-social-media .instagram{
+        background-image: url(/assets/icon-instagram.svg);
+        background-repeat: no-repeat;
+        color: #191826;
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        left: 12.5%;
+    }
+    .footer .footer-social-media .instagram:hover{
+        color: #FA7453;
+    }
+    .footer .footer-social-media .twitter{
+        background-image: url(/assets/icon-twitter.svg);
+        background-repeat: no-repeat;
+        color: #191826;
+        width: 20%;
+        height: 20%;
+        position: absolute;
+        left: 25%;
+    }
+    .footer .footer-social-media .twitter{
+        color: #FA7453;
+    }
+}
+/* ====== MOBILE SCREEN ENDS ======= */
+/* ====== TABLET SCREEN STARTS ======= */
+@media (min-width:625px) and (max-width:1020px){
+    body .header .backgrond-bubble{
+        background-image: url(assets/bg-main-tablet.png);
+        position: absolute;
+        width: 150%;
+        height: 1050px;
+        left: -50%;
+        top: -25%;
+    }
+
+    body .header .logo{
+        background-image: url(/assets/logo.svg);
+        position: absolute;
+        color: #191826;
+        width: 146.09px;
+        height: 32px;
+        left: 5%;
+        top: 5%;
+    }
+    body .header .patren{
+        background-image: url(/assets/bg-pattern-1.svg);
+        position: absolute;
+        width: 215px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 250px;
+        right: 0;
+        top: -2.4%;
+        overflow: hidden;
+    }
+    body .header .headline .main-text{
+        position: absolute;
+        color: #191826;
+        width: 365px;
+        height: 135px;
+        left: 5%;
+        top: 15%;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 55px;
+        line-height: 55px;
+        letter-spacing: -1px;
+    }
+    body .header .headline .sec-text{
+        position: absolute;
+        color: #191826;
+        width: 580px;
+        height: 135px;
+        left: 5%;
+        top: 33%;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    body .container{
+        overflow-x: hidden;
+    }
+    body .container .mobile-screen{
+        background-image: url(/assets/illustration-app.png);
+        background-size: 240px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 55%;
+        height: 100%;
+        left: 11%;
+        top: 48%;
+        overflow-x: hidden;
+    }
+    body .container .sec-patren{
+        background-image: url(/assets/bg-pattern-2.svg);
+        background-size: 240px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        left: 29.5%;
+        top: 57.2%;
+        z-index: -1;
+    }
+    body .container .background-sec-patren{
+        background-color: #191826;
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        width: 90%;
+        height: 46%;
+        z-index: -2;
+        border-radius: 12px;
+    }
+    body .container .container-description{
+        background-color: #FA7453;
+        position: absolute;
+        top: 70%;
+        left: 30%;
+        width: 55%;
+        height: 48%;
+        border-radius: 12px;
+    }
+    body .container .container-description-headline{
+        color: #FCFAF9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 73%;
+        left: 35%;
+        width: 40%;
+        height: 10%;
+        border-radius: 12px;
+    }
+    body .container .container-description-text{
+        color: #fcfaf9d4;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        position: absolute;
+        top: 78%;
+        left: 35%;
+        width: 345px;
+        height: 135px;
+        border-radius: 12px;
+    }
+    body .container .container-description-price{
+        color: #fcfaf9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 30px;
+        position: absolute;
+        top: 94.5%;
+        left: 35%;
+    }
+    body .container .container-description-price-text{
+        color: #fcfaf9d4;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        word-spacing: -5px;
+        position: absolute;
+        top: 94.5%;
+        left: 47%;
+    }
+    body .container .ios-download{
+        width: 44%;
+        height: 6.5%;
+        background-color: #191826;
+        position: absolute;
+        top: 101%;
+        left: 35.5%;
+        border-radius: 15px;
+    }
+    body .container .ios-download:hover{
+        background-color: #66E2DC;
+    }
+    body .container .ios-download .ios-icon{
+        background-image: url(/assets/icon-apple.svg);
+        background-size: 20px;
+        background-repeat: no-repeat;
+        color: #FCFAF9;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 31.5%;
+        left: 27%;
+    }
+    body .container .ios-download .ios-text{
+        color: #FCFAF9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 31%;
+        left: 35%;
+    }
+    body .container .android-download{
+        width: 44%;
+        height: 6.5%;
+        background-color: #FCFAF9;
+        position: absolute;
+        top: 109%;
+        left: 35.5%;
+        border-radius: 15px;
+    }
+    body .container .android-download:hover{
+        background-color: #FFB964;
+    }
+    body .container .android-download .android-icon{
+        background-image: url(/assets/icon-android.svg);
+        background-size: 22px;
+        background-repeat: no-repeat;
+        color: #191826;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 34%;
+        left: 20%;
+    }
+    body .container .android-download .android-text{
+        color: #191826;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: 31.5%;
+        left: 28%;
+    }
+    .footer .footer-logo{
+        background-image: url(/assets/logo.svg);
+        position: absolute;
+        color: #191826;
+        width: 146.09px;
+        height: 32px;
+        left: 5%;
+        top: 128%;
+    }
+    .footer .footer-discrption{
+        width: 350px;
+        height: 132px;
+        position: absolute;
+        left: 5%;
+        top: 133%;
+        color: #191826;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 19px;
+    }
+    .footer .footer-discrption span{
+        font-weight: 700;
+    }
+    .footer .footer-social-media .facebook{
+        background-image: url(/assets/icon-facebook.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        color: #191826;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 137.1%;
+        left: 80%;
+    }
+    .footer .footer-social-media .facebook:hover{
+        color: #FA7453;
+    }
+    .footer .footer-social-media .instagram{
+        background-image: url(/assets/icon-instagram.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        color: #191826;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 137.1%;
+        left: 85%;
+    }
+    .footer .footer-social-media .instagram:hover{
+        color: #FA7453;
+    }
+    .footer .footer-social-media .twitter{
+        background-image: url(/assets/icon-twitter.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        color: #191826;
+        width: 22px;
+        height: 16%;
+        position: absolute;
+        top: 137.1%;
+        left: 90%;
+    }
+    .footer .footer-social-media .twitter:hover{
+        color: #FA7453;
+    }
+}
+/* ====== TABLET SCREEN ENDS ======= */
+
+/* ====== Desctop SCREEN STARTS ======= */
+@media (min-width:1021px){
+    body .header .backgrond-bubble{
+        background-image: url(assets/bg-main-desktop.png);
+        background-repeat: repeat;
+        position: absolute;
+        width: 120%;
+        height: 220%;
+        top: -30%;
+        left: -10%;
+        z-index: -3;
+    }
+
+    body .header .logo{
+        background-image: url(/assets/logo.svg);
+        position: absolute;
+        color: #191826;
+        width: 146.09px;
+        height: 32px;
+        left: 17%;
+        top: 7%;
+    }
+    body .header .patren{
+        background-image: url(/assets/bg-pattern-1.svg);
+        position: absolute;
+        width: 320px;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: 320px;
+        right: 0px;
+        top: -4%;
+        overflow: hidden;
+    }
+    body .header .headline .main-text{
+        position: absolute;
+        color: #191826;
+        width: 965px;
+        height: 135px;
+        left: 17%;
+        top: 24%;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 90px;
+        letter-spacing: -1px;
+    }
+    body .header .headline .sec-text{
+        position: absolute;
+        color: #191826;
+        width: 850px;
+        height: 135px;
+        left: 17%;
+        top: 48%;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 30px;
+    }
+    body .container{
+        overflow-x: hidden;
+    }
+    body .container .mobile-screen{
+        background-image: url(/assets/illustration-app.png);
+        background-size: 320px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 55%;
+        height: 100%;
+        left: 22%;
+        top: 68%;
+        overflow-x: hidden;
+    }
+    body .container .sec-patren{
+        background-image: url(/assets/bg-pattern-2.svg);
+        background-size: 340px;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 70%;
+        height: 80%;
+        left: 34.3%;
+        top: 84%;
+        z-index: -1;
+    }
+    body .container .background-sec-patren{
+        background-color: #191826;
+        position: absolute;
+        top: 89%;
+        left: 17%;
+        width: 66%;
+        height: 65%;
+        z-index: -2;
+        border-radius: 12px;
+    }
+    body .container .container-description{
+        background-color: #FA7453;
+        position: absolute;
+        top: 98%;
+        left: 50%;
+        width: 28%;
+        height: 70%;
+        border-radius: 12px;
+    }
+    body .container .container-description-headline{
+        color: #FCFAF9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 104%;
+        left: 53.5%;
+        width: 40%;
+        height: 10%;
+        border-radius: 12px;
+    }
+    body .container .container-description-text{
+        color: #fcfaf9d4;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        position: absolute;
+        top: 112%;
+        left: 53.5%;
+        width: 400px;
+        height: 135px;
+        border-radius: 12px;
+    }
+    body .container .container-description-price{
+        color: #fcfaf9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 30px;
+        position: absolute;
+        top: 136.5%;
+        left: 53.5%;
+    }
+    body .container .container-description-price-text{
+        color: #fcfaf9d4;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        word-spacing: -5px;
+        position: absolute;
+        top: 136.5%;
+        left: 59%;
+    }
+    body .container .ios-download{
+        width: 21%;
+        height: 6.5%;
+        background-color: #191826;
+        position: absolute;
+        top: 146.5%;
+        left: 53.5%;
+        border-radius: 15px;
+    }
+    body .container .ios-download:hover{
+        transition-duration: 0.3s;
+        background-color: #66E2DC;
+    }
+    body .container .ios-download .ios-icon{
+        background-image: url(/assets/icon-apple.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        color: #FCFAF9;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 31.5%;
+        left: 27%;
+    }
+    body .container .ios-download .ios-text{
+        color: #FCFAF9;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 25%;
+        left: 35%;
+    }
+    body .container .android-download{
+        width: 21%;
+        height: 6.5%;
+        background-color: #FCFAF9;
+        position: absolute;
+        top: 156%;
+        left: 53.5%;
+        border-radius: 15px;
+    }
+    body .container .android-download:hover{
+        transition-duration: 0.3s;
+        background-color: #FFB964;
+    }
+    body .container .android-download .android-icon{
+        background-image: url(/assets/icon-android.svg);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        color: #191826;
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        top: 34%;
+        left: 20%;
+    }
+    body .container .android-download .android-text{
+        color: #191826;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        font-size: 22px;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        top: 25%;
+        left: 28%;
+    }
+    .footer .footer-logo{
+        background-image: url(/assets/logo.svg);
+        position: absolute;
+        color: #191826;
+        width: 146.09px;
+        height: 32px;
+        left: 17%;
+        top: 182%;
+    }
+    .footer .footer-discrption{
+        width: 380px;
+        height: 132px;
+        position: absolute;
+        left: 35%;
+        top: 178%;
+        color: #191826;
+        font-family: 'IBM Plex Sans';
+        font-weight: 400;
+        line-height: 32px;
+        font-size: 19px;
+    }
+    .footer .footer-discrption span{
+        font-weight: 700;
+    }
+    .footer .footer-discrption span:hover{
+        color: #FA7453;
+        cursor: copy;
+    }
+    .footer .footer-social-media .facebook{
+        background-image: url(/assets/icon-facebook.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        color: #191826;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 180%;
+        left: 74%;
+    }
+    .footer .footer-social-media .facebook:hover{
+        color: #FA7453;
+    }
+    .footer .footer-social-media .instagram{
+        background-image: url(/assets/icon-instagram.svg);
+        background-repeat: no-repeat;
+        background-size: 22px;
+        color: #191826;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 180%;
+        left: 77%;
+    }
+    .footer .footer-social-media .instagram:hover{
+        color: #FA7453;
+    }
+    .footer .footer-social-media .twitter{
+        size: 22px;
+        color: #191826;
+        width: 22px;
+        height: 16%;
+        position: absolute;
+        top: 180%;
+        left: 80%;
+    }
+    .footer .footer-social-media .twitter:hover{
+        color: #FA7453;
+    }
+}
